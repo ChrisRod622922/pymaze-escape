@@ -21,6 +21,9 @@ Navigate the player (block) around the maze and try to aquire the amount of poin
 
 There are many ways to obtain points. Yellow coins award 1 point, but be careful of the baby blue coins -- some will decrease your speed, while others will increase your speed! Look closely and you will be able to detect which ones are which. Don't forget about the red gate in the middle! Use the red-colored switch to deactivate it.
 
+### Preview:
+![Screenshot](/screenshots/s1.png)
+
 ### Credits:
 
 #### Music
