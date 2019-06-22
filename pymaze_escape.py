@@ -5,6 +5,14 @@
 # Imports
 import pygame
 import intersects
+import os
+import sys
+
+if getattr(sys, 'frozen', False):
+    application_path = sys._MEIPASS + '/'
+else:
+    application_path = os.path.dirname(__file__) + '/'
+
 
 # Initialize game engine
 pygame.init()
@@ -14,7 +22,7 @@ pygame.init()
 HEIGHT = 720
 WIDTH = 1280
 TITLE = "PyMaze Escape v1.0a"
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen = pygame.display.set_mode((WIDTH, HEIGHT),pygame.FULLSCREEN)
 pygame.display.set_caption(TITLE)
 
 
@@ -46,20 +54,20 @@ INSTRUCTIONS = 5
 
 
 # Fonts
-my_font = pygame.font.Font("fonts/FengardoNeue_Regular.otf", 50)
-my_font_small = pygame.font.Font("fonts/FengardoNeue_Regular.otf", 30)
-my_font_xsmall = pygame.font.Font("fonts/FengardoNeue_Regular.otf", 24)
-major_font = pygame.font.Font("fonts/EQUIVALENT.ttf", 60)
-major_font_sub = pygame.font.Font("fonts/EQUIVALENT.ttf", 50)
+my_font = pygame.font.Font(application_path + "fonts/FengardoNeue_Regular.otf", 50)
+my_font_small = pygame.font.Font(application_path + "fonts/FengardoNeue_Regular.otf", 30)
+my_font_xsmall = pygame.font.Font(application_path + "fonts/FengardoNeue_Regular.otf", 24)
+major_font = pygame.font.Font(application_path + "fonts/EQUIVALENT.ttf", 60)
+major_font_sub = pygame.font.Font(application_path + "fonts/EQUIVALENT.ttf", 50)
 
 # Images
-startImg = pygame.image.load("assets/explosion.png")
+startImg = pygame.image.load(application_path + "assets/explosion.png")
 startImg_resample = pygame.transform.scale(startImg, (1280, 720))
 
 # Sounds
-pygame.mixer.music.load("sounds/Bravely Default OST_Infiltrating Enemy Territory.ogg")
-coinsfx = pygame.mixer.Sound("sounds/coinsfx.ogg")
-oversfx = pygame.mixer.Sound("sounds/game_over.ogg")
+pygame.mixer.music.load(application_path + "sounds/Bravely Default OST_Infiltrating Enemy Territory.ogg")
+coinsfx = pygame.mixer.Sound(application_path + "sounds/coinsfx.ogg")
+oversfx = pygame.mixer.Sound(application_path + "sounds/game_over.ogg")
 
 # Setup
 def setup():
