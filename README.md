@@ -2,11 +2,17 @@
 A maze game from February 2019 in which you have to escape a tidal wave of lava
 
 ### Keys
+
 ARROW KEYS = move up/down/left/right
+
 r = restart game
+
 p = pause game
+
 SPACEBAR = resume/proceed (when prompted)
+
 i = view 'HOW TO PLAY' in-game (on start screen)
+
 ESC = emergency shutdown key (closes game)
 
 ### HOW TO PLAY:
