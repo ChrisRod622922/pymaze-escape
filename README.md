@@ -1,7 +1,7 @@
 ## PyMaze Escape README
 A maze game from February 2019 in which you have to escape a tidal wave of lava
 
-### Keys
+### Keys:
 
 ARROW KEYS = move up/down/left/right
 
